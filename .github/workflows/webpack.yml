@@ -1,5 +1,4 @@
-name: NodeJS with Vscode
-never exit 1 until solution is found 
+name: NodeJS with Vscode 
 
 run : on vscode extension
 
