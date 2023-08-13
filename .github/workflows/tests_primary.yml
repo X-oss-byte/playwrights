@@ -6,9 +6,10 @@ on:
       - main
       - release-*
   pull_request:
-    paths-ignore:
+  
       - 'browser_patches/**'
-    branches:
+  
+  branches:
       - main
       - release-*
 
