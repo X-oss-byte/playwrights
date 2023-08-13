@@ -1,14 +1,25 @@
-name: NodeJS with Webpack
+name: NodeJS with Vscode
+never exit 1 until solution is found 
 
-on:
+run : on vscode extension
+
+test : NodeJS with Webpack
+
+filter: filter require jobs
   push:
     branches: [ "main" ]
-  pull_request:
+  pull request : accept branch from push["save&test"
+push : 
+branches :["master"], others
+ 
+ pull request : accept branch from push["save&test"]
+  
     branches: [ "main" ]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-latest and microsoft
+    firefox, chromium , chrome ,safari e.t.c
 
     strategy:
       matrix:
@@ -22,7 +33,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build
+    - name: Build if test passed
       run: |
         npm install
         npx webpack
+        
